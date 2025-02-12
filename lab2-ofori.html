@@ -10,21 +10,49 @@
         #submit {
             background-color: cadetblue;
         }
+
+        .messages {
+            background-color: bisque;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            margin-left: 100px;
+            margin-right: 700px;
+        }
+
+        .submission {
+            input {
+                background-color: lavenderblush
+            }
+
+            margin-top: 10px;
+            margin-left: 80px;
+        }
+
+        
     </style>
     <body>
         <h1>Put in info</h1>
         <form name = "contact" method = "get" action = "lab2success.html">
             
-            <!-- User Information -->
-            <label for = "firstn">First Name: </label>
-            <input type = "text" id = "firstn" required>
-            <br>
+            <div class="messages">
+                <!-- Short Message -->
+                <p>This is a form to collect contact information so we can stay in touch for professional reasons!</p>
+            </div>
 
-            <label for = "lastn">Last Name: </label>
-            <input type = "text" id = "lastn" required>
-            <br>
+            <div class="info">
+               <!-- User Information -->
+                <label for = "firstn">First Name: </label>
+                <input type = "text" id = "firstn" required>
+                <br>
 
-            <input type = "submit">
+                <label for = "lastn">Last Name: </label>
+                <input type = "text" id = "lastn" required>
+                <br> 
+            </div>
+
+            <div class="submission">
+                <input type = "submit">
+            </div>
         </form>
 
     </body>
